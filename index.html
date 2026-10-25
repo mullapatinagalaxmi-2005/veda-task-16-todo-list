@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List | Veda Technology</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h2>VEDA <span>TECHNOLOGY</span></h2>
+        <p>Web Development Internship · Task 16</p>
+    </header>
+
+    <main class="container">
+        <section class="todo-card">
+            <div class="tag">MY DAILY PLANNER</div>
+            <h1>Simple To-Do List</h1>
+            <p class="subtitle">Organize your day, one task at a time.</p>
+
+            <form id="todo-form">
+                <label for="task-input">Add a new task</label>
+                <div class="input-group">
+                    <input
+                        type="text"
+                        id="task-input"
+                        placeholder="What do you need to do?"
+                        maxlength="150"
+                        autocomplete="off"
+                        required
+                    >
+                    <button type="submit" class="add-btn">+ Add</button>
+                </div>
+            </form>
+
+            <div class="list-heading">
+                <h2>Your Tasks</h2>
+                <span id="task-count">0 tasks</span>
+            </div>
+
+            <ul id="task-list" aria-label="To-do tasks"></ul>
+
+            <p id="empty-message" class="empty-message">
+                No tasks yet. Add your first task!
+            </p>
+
+            <p id="status-message" class="status-message"
+               role="status" aria-live="polite"></p>
+
+            <button type="button" id="clear-btn" class="clear-btn">
+                Clear All Tasks
+            </button>
+
+            <p class="note">
+                Note: Tasks are stored in memory and will reset when the page is refreshed.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built with HTML, CSS and JavaScript</p>
+        <p>Veda Technology Internship Project</p>
+    </footer>
+</body>
+</html>
